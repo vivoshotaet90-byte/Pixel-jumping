@@ -8,12 +8,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout project
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build Android APK
+      - name: Build APK
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
